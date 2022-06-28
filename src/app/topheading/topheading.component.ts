@@ -11,7 +11,7 @@ export class TopheadingComponent implements OnInit {
   constructor(private api:NewsapiservicesService) { }
 
   topheadingDisplay:any = [];
-
+  
   ngOnInit(): void {
     this.api.topHeading().subscribe((result)=>{
       console.log(result);
